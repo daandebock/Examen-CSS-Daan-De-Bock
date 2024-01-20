@@ -1,0 +1,39 @@
+/*colours 
+PURPLE: #833ab4;
+RED: #fd1d1d;
+YELLOW: #fcb045;
+*/
+header {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem; 
+    gap:2rem;
+}
+header nav {
+    display: flex;
+    gap: 1rem;
+    
+    align-items: center;
+    
+}
+header nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+   
+    
+}
+
+.button-contact{
+    background-color:#833ab4;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.button-contact:hover {
+    background-color: white;
+    border:#833ab4 1px solid;
+    color: #833ab4;
+}
