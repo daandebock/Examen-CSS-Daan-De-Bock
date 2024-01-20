@@ -2,38 +2,86 @@
 PURPLE: #833ab4;
 RED: #fd1d1d;
 YELLOW: #fcb045;
+BGcolour:  #FDFFFC;
 */
+
+/* All the styling for the header */
 header {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2.5rem; 
-    gap:2rem;
+    padding: 2.5rem;
+    gap: 2rem;
 }
+
 header nav {
     display: flex;
     gap: 1rem;
-    
+
     align-items: center;
-    
+
 }
+
 header nav a {
     text-decoration: none;
     font-size: 1rem;
     color: white;
-   
-    
+    position: relative;
+
+
 }
 
-.button-contact{
-    background-color:#833ab4;
+/*header nav a::after,*/
+.navlink-current::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: -0.5rem;
+    height: 0.1rem;
+    width: 100%;
+    border-radius: 1rem;
+    left: 0;
+    transition: all ease-in-out 500ms;
+
+
+
+}
+
+header nav a::after:hover {}
+
+/* CTA button was given a different color / appearance to get user to contact the agency more easily */
+.button-contact {
+    background-color: #833ab4;
     padding: 1rem;
     border-radius: 1rem;
+    transition: all ease-in-out 500ms;
 }
+
 .button-contact:hover {
     background-color: white;
-    border:#833ab4 1px solid;
+    border: #833ab4 0.1rem solid;
     color: #833ab4;
+}
+
+/* align icon to be aligned with the bottom of text */
+header nav a.button-contact span.material-symbols-outlined {
+    vertical-align: bottom;
+}
+
+footer {
+    background-color: #fcb045;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main {
+    background-color: #FDFFFC;
+    width: 70%;
+    margin: 0 auto;
+}
+main section.intro {
+    padding:1.5rem
 }
