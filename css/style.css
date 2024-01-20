@@ -82,6 +82,52 @@ main {
     width: 70%;
     margin: 0 auto;
 }
-main section.intro {
-    padding:1.5rem
+
+main section {
+    padding: 1.5rem
 }
+
+/* helper classes */
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-col2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-col3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.services article {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+    transition: all ease-in-out 300ms;
+}
+
+section.services article:hover {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 150px;
+
+
+}
+
+section.services h3 {
+    text-align: center;
+
+}
+
+section.services article p.icon {
+    text-align: center;
+
+}
+
+section.team p.function-title {
+    color: #fd1d1d;
+    font-weight: bold;
+}
+
+
+
