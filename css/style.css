@@ -100,17 +100,20 @@ main section {
 .grid-col3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
+.grid-col2-left{
+    grid-template-columns: 1fr 5fr;
+}
 
 section.services article {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 1rem;
     transition: all ease-in-out 300ms;
+    border-radius: 0.5rem;
 }
 
 section.services article:hover {
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 150px;
-
 
 }
 
@@ -129,5 +132,28 @@ section.team p.function-title {
     font-weight: bold;
 }
 
+section.team {
+    max-width: 80%;
+    margin: 0 auto;
+}
 
+.stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-size: 3rem;
+}
+
+.world-images {
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.world-images img#topside {
+    position: absolute;
+    right: -1rem;
+    bottom: -2rem;
+    width: 70%
+}
 
