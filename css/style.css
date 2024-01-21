@@ -3,6 +3,7 @@ PURPLE: #833ab4;
 RED: #fd1d1d;
 YELLOW: #fcb045;
 BGcolour:  #FDFFFC;
+ORANGE: #ef9750;
 */
 
 /* All the styling for the header */
@@ -109,6 +110,7 @@ section.services article {
     padding: 1rem;
     transition: all ease-in-out 300ms;
     border-radius: 0.5rem;
+    
 }
 
 section.services article:hover {
@@ -147,6 +149,10 @@ section.team {
     position: relative;
     top: 0;
     left: 0;
+    background-color: #fcb045;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    
 
 }
 
@@ -155,5 +161,19 @@ section.team {
     right: -1rem;
     bottom: -2rem;
     width: 70%
+}
+.world-images img {
+    border-radius: 0.5rem;
+}
+
+main section.team section img {
+    border-radius: 0.5rem;
+}
+
+main section.cta {
+    background-color: #ef9750;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    
 }
 
