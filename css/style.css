@@ -58,11 +58,13 @@ header nav a::after:hover {}
     padding: 1rem;
     border-radius: 1rem;
     transition: all ease-in-out 500ms;
+    border: transparent 0.2rem solid;
+    
 }
 
 .button-contact:hover {
     background-color: white;
-    border: #833ab4 0.1rem solid;
+    border: #833ab4 0.2rem solid;
     color: #833ab4;
 }
 
@@ -176,7 +178,17 @@ main section.cta {
     background-color: #ef9750;
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
 
+}
+main section.cta a.button-contact {
+width: 25%;
+text-align: center;
+text-decoration: none;
+color: #FDFFFC;
+padding: 1rem;
+justify-content: flex-end;
 }
 
 main section#projects {
@@ -192,8 +204,6 @@ main section#projects img {
 main section#projects figure {
 
     position: relative;
-   
-    
     margin: 1rem 0;
 
 
@@ -224,6 +234,7 @@ main section#projects figure:nth-child(1) figcaption{
 
 main section#projects figure figcaption:hover {
     opacity: 1;
+    
 }
 main section#projects div {
     margin-bottom: 1rem;
@@ -241,4 +252,10 @@ background-color: #fcb045;
 main section#projects div:nth-child(2) figure:nth-child(3) figcaption,
 main section#projects div:nth-child(3) figure:nth-child(2) figcaption {
     background-color: #fd1d1d;
+}
+
+main section#projects article#project-info {
+    border-radius: 0.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
 }
