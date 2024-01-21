@@ -101,7 +101,8 @@ main section {
 .grid-col3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
-.grid-col2-left{
+
+.grid-col2-left {
     grid-template-columns: 1fr 5fr;
 }
 
@@ -110,7 +111,7 @@ section.services article {
     padding: 1rem;
     transition: all ease-in-out 300ms;
     border-radius: 0.5rem;
-    
+
 }
 
 section.services article:hover {
@@ -152,7 +153,7 @@ section.team {
     background-color: #fcb045;
     border-radius: 0.5rem;
     padding: 0.7rem;
-    
+
 
 }
 
@@ -162,6 +163,7 @@ section.team {
     bottom: -2rem;
     width: 70%
 }
+
 .world-images img {
     border-radius: 0.5rem;
 }
@@ -174,6 +176,69 @@ main section.cta {
     background-color: #ef9750;
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
+
+}
+
+main section#projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+main section#projects img {
+    border-radius: 0.5rem;
+}
+
+main section#projects figure {
+
+    position: relative;
+   
+    
+    margin: 1rem 0;
+
+
+}
+
+main section#projects figure img {
+    width: 100%;
+    height: auto;
     
 }
 
+main section#projects figure figcaption {
+    position: absolute;
+    left:0;
+    top:0;
+    right: 1rem;
+    padding: 1rem;
+    background-color: #fcb045;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    width: 100%;
+    height: 100%;
+
+}
+main section#projects figure:nth-child(1) figcaption{
+    background-color: #fd1d1d;
+}
+
+main section#projects figure figcaption:hover {
+    opacity: 1;
+}
+main section#projects div {
+    margin-bottom: 1rem;
+}
+/* afwisselend 1 van de drie basiskleuren van de website gebruiken om het interessanter te maken */
+main section#projects div figure:nth-child(3) figcaption,
+main section#projects div:nth-child(3) figure:nth-child(1) figcaption,
+main section#projects div:nth-child(2) figure:nth-child(2) figcaption   {
+    background-color: #833ab4;
+}
+
+main section#projects div:nth-child(2) figure:nth-child(1) figcaption  {
+background-color: #fcb045;
+}
+main section#projects div:nth-child(2) figure:nth-child(3) figcaption,
+main section#projects div:nth-child(3) figure:nth-child(2) figcaption {
+    background-color: #fd1d1d;
+}
