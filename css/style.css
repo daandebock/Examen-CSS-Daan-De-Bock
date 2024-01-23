@@ -332,7 +332,8 @@ span.title {
 }
 
 section.contact address a span,
-p span.material-symbols-outlined {
+p span.material-symbols-outlined,
+main section.team span.material-symbols-outlined {
     vertical-align: bottom;
     color: #161925;
 }
