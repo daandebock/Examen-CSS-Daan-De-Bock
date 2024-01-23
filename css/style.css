@@ -108,6 +108,10 @@ main section {
     grid-template-columns: 1fr 5fr;
 }
 
+.grid-col2-right {
+    grid-template-columns: 3fr 2fr;
+}
+
 section.services article {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 1rem;
@@ -122,7 +126,8 @@ section.services article:hover {
 
 }
 
-section.services h3 {
+section.services h3,
+section.usp h3 {
     text-align: center;
 
 }
@@ -152,19 +157,14 @@ section.team {
     position: relative;
     top: 0;
     left: 0;
-    background-color: #fcb045;
+
     border-radius: 0.5rem;
     padding: 0.7rem;
 
 
 }
 
-.world-images img#topside {
-    position: absolute;
-    right: -1rem;
-    bottom: -2rem;
-    width: 70%
-}
+
 
 .world-images img {
     border-radius: 0.5rem;
@@ -306,6 +306,7 @@ section.contact {
 
 section.contact address {
     font-style: normal;
+
 }
 
 section.contact section.address {
@@ -328,7 +329,7 @@ section.cta {
     margin-top: 1rem;
 }
 
-section.cta i {
+section.socials i {
 
     padding: 1rem;
     font-size: 2rem;
@@ -337,4 +338,49 @@ section.cta i {
 
 iframe {
     padding: 2rem 0;
+}
+
+.services-card {
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+}
+
+.usp-card section {
+    transition: all 500ms ease-in-out;
+}
+
+.usp-card section:nth-child(2) {
+    background-color: #F3F3F4;
+    border-radius: 0.5rem;
+}
+
+.usp-card section:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.section-world {
+    background-color: #F3F3F4;
+}
+
+.section-world article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socials {
+    background-color: #F3F3F4;
+}
+
+section.services section.services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+section.services section.services-cards article {
+    padding: 2rem;
 }
