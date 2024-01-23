@@ -50,7 +50,7 @@ header nav a {
 
 }
 
-header nav a::after:hover {}
+
 
 /* CTA button was given a different color / appearance to get user to contact the agency more easily */
 .button-contact {
@@ -181,6 +181,8 @@ main section.cta {
     display: flex;
     flex-direction: column;
 
+
+
 }
 
 main section.cta a.button-contact {
@@ -189,8 +191,17 @@ main section.cta a.button-contact {
     text-decoration: none;
     color: #FDFFFC;
     padding: 1rem;
-    justify-content: flex-end;
+    margin-top: 1rem;
+
+    margin: 1rem auto;
+
+
 }
+
+main section.cta a.button-contact:hover {
+    color: #833ab4;
+}
+
 
 main section#projects {
     display: grid;
@@ -261,7 +272,8 @@ main section#projects div:nth-child(3) figure:nth-child(2) figcaption {
 
 main section#projects article#project-info {
     border-radius: 0.5rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 1rem;
+    background-color: #F3F3F4;
     padding: 1rem;
 }
 
@@ -383,4 +395,9 @@ section.services section.services-cards {
 
 section.services section.services-cards article {
     padding: 2rem;
+}
+
+section.services img {
+    padding: 1.5rem;
+
 }
